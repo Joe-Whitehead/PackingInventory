@@ -28,11 +28,7 @@ namespace PackingInventory
 		private static readonly float _volume = 0.05f;
 
 		public Arrow() : base(_weight, _volume) { }
-
-		public override string ToString()
-		{
-			return "Arrow";
-		}
+		public override string ToString() => "Arrow";
 	}
 
 	internal class Bow : InventoryItem
@@ -41,11 +37,7 @@ namespace PackingInventory
 		private static readonly float _volume = 4f;
 
 		public Bow() : base(_weight, _volume) { }
-
-		public override string ToString()
-		{
-			return "Bow";
-		}
+		public override string ToString() => "Bow";
 	}
 
 	internal class Rope : InventoryItem
@@ -54,11 +46,7 @@ namespace PackingInventory
 		private static readonly float _volume = 1.5f;
 
 		public Rope() : base(_weight, _volume) { }
-
-		public override string ToString()
-		{
-			return "Rope";
-		}
+		public override string ToString() => "Rope";
 	}
 
 	internal class Water : InventoryItem
@@ -67,11 +55,7 @@ namespace PackingInventory
 		private static readonly float _volume = 3f;
 
 		public Water() : base(_weight, _volume) { }
-
-		public override string ToString()
-		{
-			return "Water";
-		}
+		public override string ToString() => "Water";
 	}
 
 	internal class FoodRations : InventoryItem
@@ -80,11 +64,7 @@ namespace PackingInventory
 		private static readonly float _volume = 0.5f;
 
 		public FoodRations() : base(_weight, _volume) { }
-
-		public override string ToString()
-		{
-			return "Food Rations";
-		}
+		public override string ToString() => "Food Rations";
 	}
 
 	internal class Sword : InventoryItem
@@ -93,10 +73,6 @@ namespace PackingInventory
 		private static readonly float _volume = 3f;
 
 		public Sword() : base(_weight, _volume) { }
-
-		public override string ToString()
-		{
-			return "Sword";
-		}
+		public override string ToString() => "Sword";
 	}
 }
