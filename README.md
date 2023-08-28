@@ -1,4 +1,5 @@
-# [C# player's Guide] Packing Inventory
+# [C# Player's Guide] Packing Inventory
+**[C# Player's Guide Book](https://csharpplayersguide.com/)**
 
 My Solution for the C# Player's Guide Challenge for "Packing Inventory" also includes "Labelling Inventory" followup changes.
 
