@@ -15,6 +15,13 @@ Console.WriteLine("----------");
 //Main loop to add items or view bag contents
 while (true)
 {
+	//Current Pack contents
+	Console.WriteLine();
+	Console.ForegroundColor = ConsoleColor.Yellow;
+	Console.WriteLine(bag.ToString());
+	Console.ResetColor();
+
+	//Looping Menu
 	Console.WriteLine();
 	Console.ForegroundColor = ConsoleColor.Cyan;
 	Console.WriteLine("What would you like to do next?");
@@ -61,6 +68,7 @@ Pack BagMenu()
 bool AddItem()
 {
 	Console.Clear();
+
 	ViewItems();
 
 	Console.WriteLine("""

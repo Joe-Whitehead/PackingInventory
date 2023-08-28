@@ -118,11 +118,25 @@ namespace PackingInventory
 			return false;
 		}
 
+		public override string ToString()
+		{
+			string[] itemNames = new string[Items.Length];
+			for (int i = 0; i <= Items.Length - 1; i++)
+			{
+				if (Items[i] is null) continue;
+				
+				itemNames[i] = Items[i].ToString()!;				
+			}
+
+			return $"Pack currently contains: {string.Join(", ", itemNames.OfType<string>())}";
+		}
+
 		//Is the Pack full on any of our limits
 		public bool IsFull() => IsMaxItems() || IsMaxWeight() || IsMaxVolume();
 		public bool IsMaxItems() => ItemCount >= MaxItems;
 		public bool IsMaxWeight() => CurrentWeight >= MaxWeight;
 		public bool IsMaxVolume() => CurrentVolume >= MaxVolume;
-
 	}
+
+
 }
