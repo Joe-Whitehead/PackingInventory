@@ -127,8 +127,7 @@ namespace PackingInventory
 				
 				itemNames[i] = Items[i].ToString()!;				
 			}
-
-			return $"Pack currently contains: {string.Join(", ", itemNames.OfType<string>())}";
+			return $"Pack currently contains: {(string.IsNullOrEmpty(itemNames[0]) ? "Nothing" : string.Join(", ", itemNames.OfType<string>()))}";
 		}
 
 		//Is the Pack full on any of our limits
