@@ -1,6 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using PackingInventory;
-using System.Reflection.Metadata.Ecma335;
 
 Console.Title = "Packing Inventory";
 Pack bag = BagMenu();
